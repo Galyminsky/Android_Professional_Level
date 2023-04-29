@@ -1,8 +1,8 @@
 package me.proton.jobforandroid.domain
 
-class GetShopItemUseCase {
+class GetShopItemUseCase(private val shopListRepository: ShopListRepository) {
 
-    fun getShopItem(shopItem: Int) : ShopItem {
-        TODO()
+    fun getShopItem(shopItem: Int): ShopItem {
+        return shopListRepository.getShopItem(shopItem)
     }
 }
