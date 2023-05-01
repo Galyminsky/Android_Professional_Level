@@ -1,6 +1,7 @@
 package me.proton.jobforandroid.domain
 
 import androidx.lifecycle.LiveData
+import me.proton.jobforandroid.domain.ShopItem
 
 interface ShopListRepository {
 
@@ -10,8 +11,7 @@ interface ShopListRepository {
 
     fun editShopItem(shopItem: ShopItem)
 
-    fun getShopItem(shopItem: Int): ShopItem
+    fun getShopItem(shopItemId: Int): ShopItem
 
     fun getShopList(): LiveData<List<ShopItem>>
-
 }

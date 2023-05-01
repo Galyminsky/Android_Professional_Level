@@ -4,4 +4,5 @@
     <string name="btn_add">Add</string>
     <string name="count">1</string>
     <string name="name_product">Product</string>
+    <string name="add">Add</string>
 </resources>
